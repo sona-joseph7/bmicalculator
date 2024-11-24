@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-image: url(./R.jpeg);
+    background-size: cover;
+    height: 100vh;
+}
+h4{
+    margin-bottom: 5%;
+}
+label{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#calc{
+    margin-top: 10%;
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+    padding: 30px ;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 40%;
+    flex-wrap: nowrap;
+    max-width: 400px;
+}
+input{
+    border: none;
+    padding: 3px;
+}
+.btn{
+    border-radius: 16px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btn:hover{
+    background-color: aqua;
+    box-shadow: wheat 5px 5px 5px;
+}
+#result{
+    border-radius: 10px; 
+    display: none;
+}
+
+
+@media (max-width:768px) {
+   #calc{
+    width: 100%;
+   }
+   h4{
+    font-size: 1.5rem;
+   }
+   label{
+    font-size: 0.9rem;
+   }
+   input{
+    font-size: 0.9rem;
+   }
+}
+
+@media (max-width:480px){
+    #calc{
+        width: 100%;
+    }
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    label, input, .btn {
+        font-size: 0.8rem; 
+    }
+}
